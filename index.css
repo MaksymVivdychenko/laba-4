@@ -256,6 +256,9 @@ button:hover {
 }
 @media screen and (max-width: 768px)
 {
+    h3{
+        font-size: calc(2vh + 1vw);
+    }
     .divText
     {
     font-size: calc(1.5vh + 0.5vw);
