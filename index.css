@@ -40,6 +40,31 @@ main
     background-repeat: no-repeat;
     background-image: url(styles/vivid-blurred-colorful-wallpaper-background.jpg);
 }
+.material-symbols-outlined
+{
+    cursor: pointer;
+}
+input[type="search"]::-webkit-search-cancel-button
+ {
+    display: none;
+  }
+.search
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid black;
+}
+.search-input
+{
+    border: none;
+    outline: none;
+}
+input
+{
+font-size: 20px;
+}
 
 .mainButtons
 {
@@ -52,6 +77,11 @@ main
     transition: 1s;
     border-radius: 35px;
     justify-self: flex-end;
+}
+.picture
+{
+    width: 30%;
+    height: 30%;
 }
 .buttonText
 {
@@ -73,7 +103,7 @@ button:hover {
 
 .divText
 {
-    font-size: calc(1vh + 0.5vw);
+    font-size: calc(0.8vh + 0.5vw);
     font-style: italic;
     color: #868686;
 }
@@ -128,8 +158,8 @@ header{
 }
 main
 {
-    min-height: 83vh;
-    padding-top: 6.2vh;
+    height: 83vh;
+    padding-top: 4.2vh;
     padding-bottom: 6.2vh;
     padding-left: 18vw;
     padding-right: 18vw;
@@ -137,6 +167,7 @@ main
 }
 
 .mainText{
+    min-height: 35%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -145,20 +176,30 @@ main
 }
 .mainSections
 {
-    padding-top: 4vh;
+    padding-top: 1vh;
     padding-bottom: 2vh;
-    height: 75%;
+    min-height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
     column-gap: 2%;
 }
+.footerMainBlock
+{
+    height: 5%;
+}
 .leftBlock, .middleBlock, .rightBlock
 {
+    justify-content: center;
     padding: 1.5%;
-    height: auto;
+    min-height: 100%;
     width: 30%;
     border-radius: 35px;
+}
+.divText
+{
+    height: 45%;
+    overflow: hidden;
 }
 @media screen and (max-width: 1108px) 
 {
@@ -203,8 +244,8 @@ h3{
 }
 .mainButtons
 {
-    height: 4vh;
-    width: 6vw;
+    height: 15%;
+    width: 30%;
     border-radius: 40px; 
 }
 
@@ -215,6 +256,10 @@ button:hover {
 }
 @media screen and (max-width: 768px)
 {
+    .divText
+    {
+    font-size: calc(1.5vh + 0.5vw);
+    }
     .menu
     {
         padding-top: 5px;
@@ -284,7 +329,7 @@ button:hover {
     }
     .buttonText
     {
-        font-size: calc(1vh + 0.5vw);
+        font-size: calc(1.5vh + 0.5vw);
         text-align: center;
         vertical-align: middle;
     }
