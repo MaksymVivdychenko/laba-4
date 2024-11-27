@@ -256,6 +256,9 @@ button:hover {
 }
 @media screen and (max-width: 768px)
 {
+    img{
+        border-radius: 10px;
+    }
     h3{
         font-size: calc(2vh + 1vw);
     }
